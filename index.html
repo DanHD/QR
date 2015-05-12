@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Code written by Danny M @dannymout in 2015-->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
+            <script type="text/javascript">
+function myFunction() {
+    document.getElementById("qrPicture").src = "https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=" + document.getElementById('qrtext').value  ;
+}
+</script>
+        
+    </head>
+    
+    <body>
+        <div class="logo">
+            <p>QR Code Generator</p>
+        </div> 
+        
+            <img class="qrcode" id="qrPicture" src="" width="400" height="400">
+        
+        <br>
+        
+            <div class="qrtext">
+                <input id="qrtext" align="center"  size="80" placeholder="Type in the contents of the QR Code" type="text" name="firstname">
+            </div>
+
+        
+        <br>
+        
+        <button onclick="myFunction()" type="button">Create QR Code</button>
+        
+        <p>A <a  href=http://danhd.com>Danny M</a>Project</p>
+        
+    </body>
+</html>
